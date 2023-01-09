@@ -42,7 +42,7 @@ def post_block_list(blocklist):
     path='/api/v1/admin/domain_blocks'
     for d in blocklist:
         print("Blocking %s with severity %s because %s" % (d['domain'],d['severity'],d['public_comment']))
-        #requests.post('https://'+config['MY_INSTANCE']+path,headers=headers,data=d)
+        requests.post('https://'+config['MY_INSTANCE']+path,headers=headers,data=d)
 
 
 config_file = os.path.dirname(os.path.realpath(__file__))+'/config.json'
