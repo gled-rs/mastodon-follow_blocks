@@ -14,6 +14,7 @@ Be careful that your instance will block whatever other instance you
 # getting an API key:
 - On gotosocial, navigate to your instance admin page and use your browser network inspector to get the key
 Ctrl+shift+i on Firefox, then click network and then navigate to generate  traffic. You can click a request, look at 'Request headers' and search for the Authorization: Bearer APIKEY header.
+- the above method should also work on mastodon, unsure though as I don't use it.
 
 # Items in config.json
 - MY_INSTANCE: your instance domain.
